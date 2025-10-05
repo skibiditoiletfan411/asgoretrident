@@ -1,644 +1,605 @@
-local Handle  = Instance.new("Part", game.Players.LocalPlayer.Character)
-			Handle:BreakJoints()
-			Handle.TopSurface = "Smooth"
-			Handle.Material = "SmoothPlastic"
-			Handle.Name = 'Handle'
-			Handle.Transparency=1
-			Handle.BottomSurface = "Smooth"
-			Handle.FormFactor = "Custom" Handle.CanCollide = false
-			Handle.BrickColor = BrickColor.new("Medium stone grey")
-			Handle.Size = Vector3.new(0.5, 4.9000001, 0.799999833)
-local Handleweld = Instance.new("ManualWeld")
-Handleweld.Part0 = game.Players.LocalPlayer.Character["Right Arm"]
-Handleweld.Part1 = Handle  Handleweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-Handleweld.C1 = CFrame.new(-0.0500130653, -0.15998745, 0.999988556, 1, 0, 0, 0, 0, -1, 0, 0.999999881, 0)
-Handleweld.Parent = game.Players.LocalPlayer.Character["Right Arm"]
-staffweld=Handleweld
-Handlecf=Handleweld.C1
-local Grip  = Instance.new("Part", game.Players.LocalPlayer.Character)
-			Grip:BreakJoints()
-			Grip.TopSurface = "Smooth"
-			Grip.Material = "SmoothPlastic"
-			Grip.Name = 'Grip'
-			Grip.BottomSurface = "Smooth"
-			Grip.FormFactor = "Custom" Grip.CanCollide = false
-			Grip.BrickColor = BrickColor.new("Toothpaste")
-			Grip.Size = Vector3.new(0.400000006, 4, 0.400000006)
-			    local Gripweld = Instance.new("ManualWeld")
-   Gripweld.Part0 =  Handle   Gripweld.Part1 = Grip  Gripweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-   Gripweld.C1 = CFrame.new(0.0500068665, 0.449998379, 5.96046448e-006, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-    Gripweld.Parent = Grip		
-					local GripMesh = Instance.new("CylinderMesh",Grip)
-				GripMesh.Name = "Mesh"
-				GripMesh.Offset = Vector3.new(0, 0, 0)
-				GripMesh.Scale = Vector3.new(1, 1, 1)
-				
-local Down  = Instance.new("WedgePart", game.Players.LocalPlayer.Character)
-			Down:BreakJoints()
-			Down.TopSurface = "Smooth"
-			Down.Material = "SmoothPlastic"
-			Down.Name = 'Down'
-			Down.BottomSurface = "Smooth"
-			Down.FormFactor = "Custom" Down.CanCollide = false
-			Down.BrickColor = BrickColor.new("Toothpaste")
-			Down.Size = Vector3.new(0.200000003, 1, 0.400000006)
-			    local Downweld = Instance.new("ManualWeld")
-   Downweld.Part0 =  Handle   Downweld.Part1 = Down  Downweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-   Downweld.C1 = CFrame.new(0.0500155687, -1.95003223, 0.19999814, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-    Downweld.Parent = Down		
-local Connector  = Instance.new("Part", game.Players.LocalPlayer.Character)
-			Connector:BreakJoints()
-			Connector.TopSurface = "Smooth"
-			Connector.Material = "SmoothPlastic"
-			Connector.Name = 'Connector'
-			Connector.Shape="Ball"
-			Connector.BottomSurface = "Smooth"
-			Connector.FormFactor = "Custom" Connector.CanCollide = false
-			Connector.BrickColor = BrickColor.new("Toothpaste")
-			Connector.Size = Vector3.new(0.400000006, 0.400000006, 0.400000006)
-			Connectorweld = Instance.new("ManualWeld")
-   Connectorweld.Part0 =  Handle   Connectorweld.Part1 = Connector  Connectorweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-   Connectorweld.C1 = CFrame.new(0.0500068665, -1.55001354, 6.91413879e-006, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-    Connectorweld.Parent = Connector		
-local Up  = Instance.new("WedgePart", game.Players.LocalPlayer.Character)
-			Up:BreakJoints()
-			Up.TopSurface = "Smooth"
-			Up.Material = "SmoothPlastic"
-			Up.Name = 'Up'
-			Up.BottomSurface = "Smooth"
-			Up.FormFactor = "Custom" Up.CanCollide = false
-			Up.BrickColor = BrickColor.new("Toothpaste")
-			Up.Size = Vector3.new(0.200000003, 1, 0.400000006)
-			    local Upweld = Instance.new("ManualWeld")
-   Upweld.Part0 =  Handle   Upweld.Part1 = Up  Upweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-   Upweld.C1 = CFrame.new(-0.0500155687, -1.95002747, 0.200003147, -1, 0, 0, 0, 1, 0, -0, 0, -1)
-    Upweld.Parent = Up		
-Connector.Material="Neon"
-Grip.Material="Neon"
-Up.Material="Neon"
-Down.Material="Neon"
-Player=game:GetService("Players").LocalPlayer
-Character=Player.Character 
-Character.Animate:Destroy()
-PlayerGui=Player.PlayerGui 
-Backpack=Player.Backpack 
-Torso=Character.Torso 
-Head=Character.Head 
-Humanoid=Character.Humanoid
-Humanoid.WalkSpeed=32
-LeftArm=Character["Left Arm"] 
-LeftLeg=Character["Left Leg"] 
-RightArm=Character["Right Arm"] 
-RightLeg=Character["Right Leg"] 
-LS=Torso["Left Shoulder"] 
-LH=Torso["Left Hip"] 
-RS=Torso["Right Shoulder"] 
-RH=Torso["Right Hip"] 
-Neck=Torso.Neck
-it=Instance.new
-vt=Vector3.new
-cf=CFrame.new
-euler=CFrame.fromEulerAnglesXYZ
-angles=CFrame.Angles
-necko=cf(0, 1, 0, -1, -0, -0, 0, 0, 1, 0, 1, 0)
-necko2=cf(0, -0.5, 0, -1, -0, -0, 0, 0, 1, 0, 1, 0)
-LHC0=cf(-1,-1,0,-0,-0,-1,0,1,0,1,0,0)
-LHC1=cf(-0.5,1,0,-0,-0,-1,0,1,0,1,0,0)
-RHC0=cf(1,-1,0,0,0,1,0,1,0,-1,-0,-0)
-RHC1=cf(0.5,1,0,0,0,1,0,1,0,-1,-0,-0)
-RootPart=Character.HumanoidRootPart
-RootJoint=RootPart.RootJoint
-RootCF=euler(-1.57,0,3.14)
-attack=false 
-attackdebounce=false 
-MMouse=nil
-combo=0
-local Anim="Idle"
-player=nil 
---save shoulders 
-RSH, LSH=nil, nil 
---welds 
-RW, LW=Instance.new("Weld"), Instance.new("Weld") 
-RW.Name="Right Shoulder" LW.Name="Left Shoulder"
-LH=Torso["Left Hip"]
-RH=Torso["Right Hip"]
 
 
-function clerp(a,b,t) 
-local qa = {QuaternionFromCFrame(a)}
-local qb = {QuaternionFromCFrame(b)} 
-local ax, ay, az = a.x, a.y, a.z 
-local bx, by, bz = b.x, b.y, b.z
-local _t = 1-t
-return QuaternionToCFrame(_t*ax + t*bx, _t*ay + t*by, _t*az + t*bz,QuaternionSlerp(qa, qb, t)) 
+wt = 0.05 s = script it = Instance.new v3 = Vector3.new c3 = Color3.new ud = UDim2.new cf = CFrame.new ca = CFrame.Angles pi = math.pi rd = math.rad
+bc = BrickColor.new ab = math.abs de = math.deg ts = tostring tn = tonumber ti = table.insert tr = table.remove  
+cr = coroutine.resume cc = coroutine.create
+asset = "http://www.roblox.com/asset/?id="
+sr = string.reverse sl = string.lower su = string.upper 
+Serv = {} Serv.p = game:GetService(sr("sreyalP")) Serv.l = game:GetService(sr("gnithgiL")) 
+Serv.is = game:GetService(sr("ecivreStresnI")) if game:findFirstChild(sr("revreSkrowteN")) then Serv.ns = game:GetService(sr("revreSkrowteN")) else NetworkServer = nil end 
+Serv.sg = game:GetService(sr("iuGretratS")) Serv.sp = game:GetService(sr("kcaPretratS")) Serv.d = game:GetService(sr("sirbeD"))
+Decs = {}
+Decs.Crack = "49173398" Decs.Cloud = "1095708" Decs.Spike = "1033714" Decs.Rock = "1290033" Decs.Crown = "1323306"
+function ft(tablez,item) if not tablez or not item then return nil end for i=1,#tablez do if tablez[i] == item then return i end end return nil end
+function re(par,obj) if type(par) ~= "userdata" or type(obj) ~= "string" then return nil end if par:findFirstChild(obj) then par[obj]:Remove() end end 
+function pa(pa,sh,x,y,z,c,a,tr,re,bc2) local fp = nil if sh ~= "Wedge" and sh ~= "CornerWedge" then  fp = it("Part",pa) fp.Shape = sh  fp.formFactor = "Custom" elseif sh == "Wedge" then fp = it("WedgePart",pa)  fp.formFactor = "Custom"
+elseif sh == "CornerWedge" then fp = it("CornerWedgePart",pa)  end  fp.Size = v3(x,y,z) fp.CanCollide = c fp.Anchored = false fp.BrickColor = bc(bc2) fp.Transparency = tr fp.Reflectance = re fp.BottomSurface = 0
+fp.TopSurface = 0 fp.CFrame = t.CFrame + Vector3.new(0,50,0) fp.Velocity = Vector3.new(0,10,0) fp:BreakJoints() return fp  end 
+function clearit(tab) for xx=1,#tab do tab[xx]:Remove() end end 
+function weld(pa,p0,p1,x,y,z,a,b,c) local fw = it("Weld",pa) fw.Part0 = p0 fw.Part1 = p1 fw.C0 = cf(x,y,z) *ca(a,b,c) return fw end
+function spm(ty,pa,ss) local sp = it("SpecialMesh",pa) sp.MeshType = ty sp.Scale = Vector3.new(ss,ss,ss) end function mbm(pa,sx,sy,sz) local bm = Instance.new("BlockMesh",pa) bm.Scale = Vector3.new(sx,sy,sz) end 
+function ra(mn,mx,dc) local tms = 1 if dc == nil then dc = 0 end if type(dc) == "number" and dc > 5 then dc = 5 end for zx=1,dc do tms = tms*10 end   return math.random(mn*tms,mx*tms)/tms end 
+p = Serv.p.LocalPlayer
+bp = p.Backpack
+pg = p.PlayerGui
+c = p.Character
+he = c.Head
+t = c.Torso
+hu = c.Humanoid
+mou = nil
+re(c,"Hand")
+s = 2
+     
+Equip = false
+HTrans = 0
+HRef = 0
+HCol = "a"
+LaserCol = "New Yeller"
+LaserCol2 = "Really red"
+LaserCol3 = "Alder"
+Posing = "Follow"
+Facing = "Owner"
+Anim = {}
+Anim.a = "None"
+Anim.b = "None"
+Anim.Welding = 0
+local fingwide = 1.5*s
+local finghei = 2.8
+local tiphei = 2.55
+handoffset = v3(5,18,-8)*s
+bgx,bgy,bgz = -90,0,0
+w = {}
+Button = false 
+--
+BlastMesh = it("FileMesh")
+BlastMesh.MeshId = "http://www.roblox.com/asset/?id=20329976"
+RingMesh = it("FileMesh")
+RingMesh.MeshId = "http://www.roblox.com/asset/?id=3270017"
+RockMesh = it("FileMesh")
+DiamondMesh = it("FileMesh")
+DiamondMesh.MeshId = "http://www.roblox.com/Asset/?id=9756362"
+m = Instance.new("Model",c) m.Name = "Hand"
+Palm = pa(m,"Block",6*s,7*s,fingwide*2,true,false,HTrans,HRef,HCol) mbm(Palm,1,1,0.6)
+local x,y,z = Palm.Size.x,Palm.Size.y,Palm.Size.z
+bPoint1 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Point1 = weld(bPoint1,Palm,bPoint1,-x/2+(fingwide/2),y/2,0,0,0,0)
+pPoint1 = pa(m,"Block",fingwide,finghei*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pPoint1,0.9,1,0.9)
+wPoint1 = weld(pPoint1,bPoint1,pPoint1,0,pPoint1.Size.y/2,0,0,0,0)
+bPoint2 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Point2 = weld(bPoint2,pPoint1,bPoint2,0,pPoint1.Size.y/2,0,0,0,0)
+pPoint2 = pa(m,"Block",fingwide,finghei*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pPoint2,0.9,1,0.9)
+wPoint2 = weld(pPoint2,bPoint2,pPoint2,0,pPoint1.Size.y/2,0,0,0,0)
+bPoint3 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Point3 = weld(bPoint3,pPoint2,bPoint3,0,pPoint2.Size.y/2,0,0,0,0)
+pPoint3 = pa(m,"Block",fingwide,tiphei*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pPoint3,0.9,1,0.9)
+wPoint3 = weld(pPoint3,bPoint3,pPoint3,0,pPoint3.Size.y/2,0,0,0,0)
+bMid1 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Mid1 = weld(bMid1,Palm,bMid1,-x/2+((fingwide/2)+((fingwide)*1)),y/2,0,0,0,0)
+pMid1 = pa(m,"Block",fingwide,(finghei*1.1)*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pMid1,0.9,1,0.9)
+wMid1 = weld(pMid1,bMid1,pMid1,0,pMid1.Size.y/2,0,0,0,0)
+bMid2 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Mid2 = weld(bMid2,pMid1,bMid2,0,pMid1.Size.y/2,0,0,0,0)
+pMid2 = pa(m,"Block",fingwide,(finghei*1.1)*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pMid2,0.9,1,0.9)
+wMid2 = weld(pMid2,bMid2,pMid2,0,pMid1.Size.y/2,0,0,0,0)
+bMid3 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Mid3 = weld(bMid3,pMid2,bMid3,0,pMid2.Size.y/2,0,0,0,0)
+pMid3 = pa(m,"Block",fingwide,(tiphei*1.1)*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pMid3,0.9,1,0.9)
+wMid3 = weld(pMid3,bMid3,pMid3,0,pMid3.Size.y/2,0,0,0,0)
+bRing1 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Ring1 = weld(bRing1,Palm,bRing1,-x/2+((fingwide/2)+((fingwide)*2)),y/2,0,0,0,0)
+pRing1 = pa(m,"Block",fingwide,(finghei*0.98)*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pRing1,0.9,1,0.9)
+wRing1 = weld(pRing1,bRing1,pRing1,0,pRing1.Size.y/2,0,0,0,0)
+bRing2 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Ring2 = weld(bRing2,pRing1,bRing2,0,pRing1.Size.y/2,0,0,0,0)
+pRing2 = pa(m,"Block",fingwide,(finghei*0.98)*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pRing2,0.9,1,0.9)
+wRing2 = weld(pRing2,bRing2,pRing2,0,pRing1.Size.y/2,0,0,0,0)
+bRing3 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Ring3 = weld(bRing3,pRing2,bRing3,0,pRing2.Size.y/2,0,0,0,0)
+pRing3 = pa(m,"Block",fingwide,(tiphei*0.98)*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pRing3,0.9,1,0.9)
+wRing3 = weld(pRing3,bRing3,pRing3,0,pRing3.Size.y/2,0,0,0,0)
+bPinkie1 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Pinkie1 = weld(bPinkie1,Palm,bPinkie1,-x/2+((fingwide/2)+((fingwide)*3)),y/2,0,0,0,0)
+pPinkie1 = pa(m,"Block",fingwide,(finghei*0.8)*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pPinkie1,0.9,1,0.9)
+wPinkie1 = weld(pPinkie1,bPinkie1,pPinkie1,0,pPinkie1.Size.y/2,0,0,0,0)
+bPinkie2 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Pinkie2 = weld(bPinkie2,pPinkie1,bPinkie2,0,pPinkie1.Size.y/2,0,0,0,0)
+pPinkie2 = pa(m,"Block",fingwide,(finghei*0.8)*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pPinkie2,0.9,1,0.9)
+wPinkie2 = weld(pPinkie2,bPinkie2,pPinkie2,0,pPinkie1.Size.y/2,0,0,0,0)
+bPinkie3 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Pinkie3 = weld(bPinkie3,pPinkie2,bPinkie3,0,pPinkie2.Size.y/2,0,0,0,0)
+pPinkie3 = pa(m,"Block",fingwide,(tiphei*0.8)*s,fingwide,true,false,HTrans,HRef,HCol) mbm(pPinkie3,0.9,1,0.9)
+wPinkie3 = weld(pPinkie3,bPinkie3,pPinkie3,0,pPinkie3.Size.y/2,0,0,0,0)
+bThumb1 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Thumb1 = weld(bThumb1,Palm,bThumb1,-x/2+(fingwide/7),-y*0.1,-fingwide*0.25,0,0,0)
+pThumb1 = pa(m,"Block",fingwide*1.4,(finghei*1)*s,fingwide*1.4,true,false,HTrans,HRef,HCol) mbm(pThumb1,0.9,1,0.9)
+wThumb1 = weld(pThumb1,bThumb1,pThumb1,0,pThumb1.Size.y/2,0,0,0,0)
+bThumb2 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Thumb2 = weld(bThumb2,pThumb1,bThumb2,0,pThumb1.Size.y/2,0,0,0,0)
+pThumb2 = pa(m,"Block",fingwide*1.3,(finghei*1)*s,fingwide*1.3,true,false,HTrans,HRef,HCol) mbm(pThumb2,0.9,1,0.9)
+wThumb2 = weld(pThumb2,bThumb2,pThumb2,0,pThumb1.Size.y/2,0,0,0,0)
+bThumb3 = pa(m,"Block",0,0,0,false,false,HTrans,HRef,HCol)
+Thumb3 = weld(bThumb3,pThumb2,bThumb3,0,pThumb2.Size.y/2,0,0,0,0)
+pThumb3 = pa(m,"Block",fingwide*1.25,(tiphei*1)*s,fingwide*1.25,true,false,HTrans,HRef,HCol) mbm(pThumb3,0.9,1,0.9)
+wThumb3 = weld(pThumb3,bThumb3,pThumb3,0,pThumb3.Size.y/2,0,0,0,0)
+w["a1"] = Pinkie1
+w["a2"] = Pinkie2
+w["a3"] = Pinkie3
+w["b1"] = Ring1
+w["b2"] = Ring2
+w["b3"] = Ring3
+w["c1"] = Mid1
+w["c2"] = Mid2
+w["c3"] = Mid3
+w["d1"] = Point1
+w["d2"] = Point2
+w["d3"] = Point3
+w["e1"] = Thumb1
+w["e2"] = Thumb2
+w["e3"] = Thumb3
+w.e1.C1 = ca(0,rd(35),rd(-20))
+w.e2.C1 = ca(rd(20),0,0)
+w.e3.C1 = ca(rd(20),0,0)
+w.d1.C1 = ca(0,0,rd(-3))
+w.c1.C1 = ca(0,0,rd(-1))
+w.b1.C1 = ca(0,0,rd(1))
+w.a1.C1 = ca(0,0,rd(3))
+function c1(wexx,smmx,xx,yy,zz) 
+coroutine.resume(coroutine.create(function()
+local xx2,yy2,zz2 = wexx.C1:toEulerAnglesXYZ() 
+local aa,bb,cc = wexx.C0.x,wexx.C0.y,wexx.C0.z
+local twa = smmx/wt
+Anim.Welding = Anim.Welding + 1
+for i=0,twa,1 do wexx.C0 = cf(aa,bb,cc)
+wexx.C1 = ca(xx2-(((xx2-rd(xx))/twa)*i),yy2-(((yy2-rd(yy))/twa)*i),zz2-(((zz2-rd(zz))/twa)*i))
+wait()
 end 
- 
-function QuaternionFromCFrame(cf) 
-local mx, my, mz, m00, m01, m02, m10, m11, m12, m20, m21, m22 = cf:components() 
-local trace = m00 + m11 + m22 
-if trace > 0 then 
-local s = math.sqrt(1 + trace) 
-local recip = 0.5/s 
-return (m21-m12)*recip, (m02-m20)*recip, (m10-m01)*recip, s*0.5 
-else 
-local i = 0 
-if m11 > m00 then
-i = 1
+Anim.Welding = Anim.Welding - 1
+end))
+end 
+function CloseFing(fingz,spee)  if spee == nil then spee = 1 end c1(w[fingz.. "1"],spee,80,0,0) c1(w[fingz.. "2"],spee,110,0,0) c1(w[fingz.. "3"],spee,30,0,0) end
+function OpenFing(fingz,spee) if spee == nil then spee = 1 end c1(w[fingz.. "1"],spee,2,0,0) c1(w[fingz.. "2"],spee,2,0,0) c1(w[fingz.. "3"],spee,2,0,0)  end 
+function HandSign(form,spee) form = form:lower() if spee == nil then spee = 1 end 
+if form == "f" then 
+CloseFing("d",spee) CloseFing("a",spee) CloseFing("b",spee)
+c1(w["c1"],spee,0,0,0) c1(w["c2"],spee,0,0,0) c1(w["c3"],spee,0,0,0) 
+c1(w["e1"],spee,70,40,-90) c1(w["e2"],spee,50,0,0) c1(w["e3"],spee,50,0,0) 
+elseif form == "fist" then
+CloseFing("d",spee) CloseFing("a",spee) CloseFing("b",spee) CloseFing("c",spee)
+c1(w["e1"],spee,70,40,-90) c1(w["e2"],spee,50,0,0) c1(w["e3"],spee,50,0,0) 
+elseif form == "pointer" then
+CloseFing("a",spee) CloseFing("b",spee) CloseFing("c",spee)
+c1(w["d1"],spee,5,0,0) c1(w["d2"],spee,5,0,0) c1(w["d3"],spee,5,0,0) 
+c1(w["e1"],spee,70,40,-90) c1(w["e2"],spee,50,0,0) c1(w["e3"],spee,50,0,0) 
+elseif form == "v" then
+CloseFing("a",spee) CloseFing("b",spee)
+c1(w["c1"],spee,1,0,15) c1(w["c2"],spee,1,0,0) c1(w["c3"],spee,1,0,0) 
+c1(w["d1"],spee,1,0,-15) c1(w["d2"],spee,1,0,0) c1(w["d3"],spee,1,0,0) 
+c1(w["e1"],spee,70,40,-90) c1(w["e2"],spee,50,0,0) c1(w["e3"],spee,50,0,0) 
+elseif form == "free" or form == "five" then
+OpenFing("a",spee) OpenFing("b",spee) OpenFing("c",spee) OpenFing("d",spee) 
+c1(w["e1"],spee,0,35,-20) c1(w["e2"],spee,20,0,0) c1(w["e3"],spee,20,0,0) 
+elseif form == "ride" then 
+c1(w["a1"],spee,60,0,0) c1(w["a2"],spee,-30,0,0) c1(w["a3"],spee,-30,0,0) 
+c1(w["b1"],spee,30,0,0) c1(w["b2"],spee,65,0,0) c1(w["b3"],spee,60,0,0) 
+c1(w["c1"],spee,30,0,0) c1(w["c2"],spee,65,0,0) c1(w["c3"],spee,60,0,0) 
+c1(w["d1"],spee,30,0,0) c1(w["d2"],spee,65,0,0) c1(w["d3"],spee,60,0,0) 
+c1(w["e1"],spee,-70,185,0) c1(w["e2"],spee,30,0,0) c1(w["e3"],spee,30,0,0) 
+elseif form == "gun" then
+CloseFing("a",spee) CloseFing("b",spee)
+c1(w["c1"],spee,0,0,1) c1(w["c2"],spee,0,0,0) c1(w["c3"],spee,0,0,0) 
+c1(w["d1"],spee,0,0,-1) c1(w["d2"],spee,0,0,0) c1(w["d3"],spee,0,0,0) 
+c1(w["e1"],spee,-60,90,0) c1(w["e2"],spee,20,0,0) c1(w["e3"],spee,-20,0,0) 
+elseif form == "wide" then
+c1(w["a1"],spee,-3,0,45) c1(w["a2"],spee,-3,0,0) c1(w["a3"],spee,-3,0,0) 
+c1(w["b1"],spee,-3,0,15) c1(w["b2"],spee,-3,0,0) c1(w["b3"],spee,-3,0,0) 
+c1(w["c1"],spee,-3,0,-15) c1(w["c2"],spee,-3,0,0) c1(w["c3"],spee,-3,0,0) 
+c1(w["d1"],spee,-3,0,-45) c1(w["d2"],spee,-3,0,0) c1(w["d3"],spee,-3,0,0) 
+c1(w["e1"],spee,-70,90,0) c1(w["e2"],spee,10,0,0) c1(w["e3"],spee,-10,0,0) 
+elseif form == "wide2" then
+c1(w["a1"],spee,-18,0,45) c1(w["a2"],spee,36,0,0) c1(w["a3"],spee,30,0,0) 
+c1(w["b1"],spee,-18,0,15) c1(w["b2"],spee,36,0,0) c1(w["b3"],spee,30,0,0) 
+c1(w["c1"],spee,-18,0,-15) c1(w["c2"],spee,36,0,0) c1(w["c3"],spee,30,0,0) 
+c1(w["d1"],spee,-18,0,-45) c1(w["d2"],spee,36,0,0) c1(w["d3"],spee,30,0,0) 
+c1(w["e1"],spee,-50,90,-10) c1(w["e2"],spee,5,0,-30) c1(w["e3"],spee,-10,0,-40) 
+elseif form == "grab2" then
+c1(w["a1"],spee,-70,-65,0) c1(w["a2"],spee,40,0,0) c1(w["a3"],spee,20,0,0) 
+c1(w["b1"],spee,-70,-20,0) c1(w["b2"],spee,40,0,0) c1(w["b3"],spee,20,0,0) 
+c1(w["c1"],spee,-70,20,-0) c1(w["c2"],spee,40,0,0) c1(w["c3"],spee,20,0,0) 
+c1(w["d1"],spee,-70,65,-0) c1(w["d2"],spee,40,0,0) c1(w["d3"],spee,20,0,0) 
+c1(w["e1"],spee,-70,150,0) c1(w["e2"],spee,30,0,0) c1(w["e3"],spee,30,0,0) 
+elseif form == "grab3" then
+c1(w["a1"],spee,-30,-40,30) c1(w["a2"],spee,50,0,0) c1(w["a3"],spee,35,0,0) 
+c1(w["b1"],spee,-30,-15,12) c1(w["b2"],spee,50,0,0) c1(w["b3"],spee,35,0,0) 
+c1(w["c1"],spee,-30,15,-12) c1(w["c2"],spee,50,0,0) c1(w["c3"],spee,35,0,0) 
+c1(w["d1"],spee,-30,40,-30) c1(w["d2"],spee,50,0,0) c1(w["d3"],spee,35,0,0) 
+c1(w["e1"],spee,-55,205,0) c1(w["e2"],spee,30,0,0) c1(w["e3"],spee,30,0,0) 
 end
-if m22 > (i == 0 and m00 or m11) then 
-i = 2 
-end 
-if i == 0 then 
-local s = math.sqrt(m00-m11-m22+1) 
-local recip = 0.5/s 
-return 0.5*s, (m10+m01)*recip, (m20+m02)*recip, (m21-m12)*recip 
-elseif i == 1 then 
-local s = math.sqrt(m11-m22-m00+1) 
-local recip = 0.5/s 
-return (m01+m10)*recip, 0.5*s, (m21+m12)*recip, (m02-m20)*recip 
-elseif i == 2 then 
-local s = math.sqrt(m22-m00-m11+1) 
-local recip = 0.5/s return (m02+m20)*recip, (m12+m21)*recip, 0.5*s, (m10-m01)*recip 
-end 
-end 
 end
-
-function QuaternionToCFrame(px, py, pz, x, y, z, w) 
-local xs, ys, zs = x + x, y + y, z + z 
-local wx, wy, wz = w*xs, w*ys, w*zs 
-local xx = x*xs 
-local xy = x*ys 
-local xz = x*zs 
-local yy = y*ys 
-local yz = y*zs 
-local zz = z*zs 
-return CFrame.new(px, py, pz,1-(yy+zz), xy - wz, xz + wy,xy + wz, 1-(xx+zz), yz - wx, xz - wy, yz + wx, 1-(xx+yy)) 
+function ColFings(iscol)
+pPinkie1.CanCollide = iscol
+pPinkie2.CanCollide = iscol
+pPinkie3.CanCollide = iscol
+pRing1.CanCollide = iscol
+pRing2.CanCollide = iscol
+pRing3.CanCollide = iscol
+pMid1.CanCollide = iscol
+pMid2.CanCollide = iscol
+pMid3.CanCollide = iscol
+pPoint1.CanCollide = iscol
+pPoint2.CanCollide = iscol
+pPoint3.CanCollide = iscol
+pThumb1.CanCollide = iscol
+pThumb2.CanCollide = iscol
+pThumb3.CanCollide = iscol
 end
- 
-function QuaternionSlerp(a, b, t) 
-local cosTheta = a[1]*b[1] + a[2]*b[2] + a[3]*b[3] + a[4]*b[4] 
-local startInterp, finishInterp; 
-if cosTheta >= 0.0001 then 
-if (1 - cosTheta) > 0.0001 then 
-local theta = math.acos(cosTheta) 
-local invSinTheta = 1/math.sin(theta) 
-startInterp = math.sin((1-t)*theta)*invSinTheta 
-finishInterp = math.sin(t*theta)*invSinTheta  
-else 
-startInterp = 1-t 
-finishInterp = t 
+function ray(Pos, Dir) 
+return Workspace:FindPartOnRay(Ray.new(Pos, Dir.unit *999), c) 
 end 
+function Earthsplosion(pos,siz,dmg,rndmg,forc,eos) local colz22 = "Earth green" if eos == nil or eos == "earth" then eos = "earth" else colz22 = "Pastel brown" eos = "sand" end 
+coroutine.resume(coroutine.create(function() 
+if eos == "earth" then local cr = pa(m,"Block",((14*siz)/10)*s,0,((14*siz)/10)*s,false,false,1,0,"") cr.Anchored = true cr.CFrame = pos *ca(rd(0),rd(ra(-360,360)),rd(0)) cr.CFrame = cr.CFrame + v3(ra(-siz*10,siz*10)/22,0,ra(-siz*10,siz*10)/22)
+local de = it("Decal",cr) de.Face = "Top" de.Texture = asset .. Decs.Crack Serv.d:AddItem(cr,25) end
+for i=1,4 do
+coroutine.resume(coroutine.create(function() 
+local sw = pa(m,"Block",(siz/3)*s,(siz*1.3)*s,(siz/3)*s,true,true,0,0,colz22) sw.Anchored = true sw.CFrame = pos *cf(ra(-3*s,3*s),0,ra(-3*s,3*s)) *ca(rd(ra(-27,27)),rd(ra(-360,360)),rd(ra(-27,27))) local swm = it("SpecialMesh",sw) if eos == "earth" then swm.MeshType = "FileMesh"
+swm.MeshId = asset .. Decs.Spike else swm.MeshType = "Sphere" end if eos == "earth" then swm.Scale = v3(sw.Size.x/1.3,sw.Size.y*1.2,sw.Size.z/1.3)
+else swm.Scale = v3(sw.Size.x/10,sw.Size.y/37,sw.Size.z/10) end sw.CFrame = sw.CFrame + v3(ra(-0.3*siz*s,0.3*siz*s,7),0,ra(-0.3*siz*s,0.3*siz*s)) sw.CFrame = sw.CFrame * cf(0,-sw.Size.y/1.4,0)
+Dustplosion(cf(pos.p+v3(0,2*s,0)),18*s,{"Dark green","Bright green","Brown"},1)
+if eos == "earth" then 
+for x=1,8 do
+sw.CFrame = sw.CFrame *cf(0,sw.Size.y/8,0) wait() end wait(ra(1,5))
+for x=1,20 do
+sw.CFrame = sw.CFrame *cf(0,-sw.Size.y/20,0) wait()
+end sw:Remove()
 else 
-if (1+cosTheta) > 0.0001 then 
-local theta = math.acos(-cosTheta) 
-local invSinTheta = 1/math.sin(theta) 
-startInterp = math.sin((t-1)*theta)*invSinTheta 
-finishInterp = math.sin(t*theta)*invSinTheta 
-else 
-startInterp = t-1 
-finishInterp = t 
-end 
-end 
-return a[1]*startInterp + b[1]*finishInterp, a[2]*startInterp + b[2]*finishInterp, a[3]*startInterp + b[3]*finishInterp, a[4]*startInterp + b[4]*finishInterp 
+for x=1,25 do
+sw.CFrame = sw.CFrame *cf(0,sw.Size.y/25,0) sw.Transparency = x/25 - 0.1 swm.Scale = swm.Scale + v3(0.025,0.025,0.025) wait() end
+end sw:Remove()
+end)) end 
+wait(0.3)
+DmgHumanoidsNear(pos.p,dmg,rndmg,5.5*s*(siz/4),forc)
+end))
 end
-function swait(num)
-if num==0 or num==nil then
-game:service'RunService'.RenderStepped:wait()
+function Dustplosion(onb,scale,col,cls) coroutine.resume(coroutine.create(function() 
+for x=1,cls do coroutine.resume(coroutine.create(function()  
+local sw = pa(m,"Block",1*s,0,1*s,false,false,0.2,0,col[ra(1,#col)]) sw.Anchored = true sw.CFrame = onb *ca(rd(ra(-35,35)),rd(ra(-360,360)),rd(ra(-35,35))) local swm = it("SpecialMesh",sw) swm.MeshType = "FileMesh"
+swm.MeshId = asset .. Decs.Cloud sw.CFrame = sw.CFrame + v3(ra(-scale,scale)/8,ra(-scale,scale)/8,ra(-scale,scale)/8) 
+for i=1,scale,0.25 do 
+swm.Scale = v3(i*1.5,i*1,i*1.5) sw.Transparency = ((i/scale)/2) + 0.45
+wait()
+end
+sw:Remove()
+end)) end 
+end)) end 
+function ShockWave(onb,scale,col) coroutine.resume(coroutine.create(function()  local sw = pa(m,"Block",1*s,0,1*s,false,false,0.2,0,col) sw.Anchored = true sw.CFrame = onb *ca(rd(90),0,0) local swm = it("SpecialMesh",sw) swm.MeshType = "FileMesh" swm.MeshId = RingMesh.MeshId  
+for i=1,scale,0.75 do  swm.Scale = v3(i*1.5,i*1.5,i*1.5) sw.Transparency = (i/scale) + 0 wait() end sw:Remove() end)) end 
+function BlastWave(onb,scale,ymes,col) coroutine.resume(coroutine.create(function() 
+local sw = pa(m,"Block",1*s,0,1*s,false,false,0.2,0,col) sw.Anchored = true sw.CFrame = onb *ca(rd(0),0,0) local swm = it("SpecialMesh",sw) swm.MeshType = "FileMesh"
+swm.MeshId = BlastMesh.MeshId 
+for i=1,scale,scale/11 do 
+swm.Scale = v3(i*1.25,i*ymes,i*1.25) sw.CFrame = sw.CFrame *ca(0,rd(720*(i/scale)),0) sw.Transparency = (i/scale) + 0
+wait()
+end
+sw:Remove()
+end))
+end 
+function Explode(onb,scale,col) local Torm = m coroutine.resume(coroutine.create(function() local e1 = Instance.new("Part") e1.Anchored = true e1.formFactor = "Custom" e1.CanCollide = false e1.Size = Vector3.new(1,1,1) e1.BrickColor = BrickColor.new(col) 
+e1.Transparency = 0.6 e1.TopSurface = 0 e1.BottomSurface = 0 e1.Parent = Torm e1.CFrame = onb local e1m = Instance.new("SpecialMesh") 
+e1m.MeshType = "Sphere" e1m.Parent = e1 local r1 = Instance.new("Part") r1.Anchored = true r1.formFactor = "Custom" r1.CanCollide = false r1.Size = Vector3.new(1,1,1) r1.BrickColor = BrickColor.new(col) r1.Transparency = 0.6 r1.TopSurface = 0 r1.BottomSurface = 0 r1.Parent = Torm r1.CFrame = e1.CFrame *CFrame.Angles(math.rad(180),0,0) local r1m = Instance.new("SpecialMesh") r1m.MeshType = "FileMesh" 
+r1m.Scale = Vector3.new(3,3,3) r1m.Parent = r1 r1m.MeshId = RingMesh.MeshId local r2 = Instance.new("Part") r2.Anchored = true r2.formFactor = "Custom" r2.CanCollide = false r2.Size = Vector3.new(1,1,1) r2.BrickColor = BrickColor.new(col) r2.Transparency = 0.6 r2.TopSurface = 0 r2.BottomSurface = 0 r2.Parent = Torm r2.CFrame = e1.CFrame *CFrame.Angles(0,math.rad(180),0) local r2m = Instance.new("SpecialMesh") r2m.MeshType = "FileMesh" 
+r2m.Parent = r2 r2m.Scale = Vector3.new(3,3,3) r2m.MeshId = RingMesh.MeshId local bla = Instance.new("Part") bla.Anchored = true 
+bla.formFactor = "Custom" bla.CanCollide = false bla.Size = Vector3.new(1,1,1)  bla.BrickColor = BrickColor.new(col) bla.Transparency = 0.6 bla.TopSurface = 0 bla.BottomSurface = 0 bla.Parent = Torm bla.CFrame = onb local blam = Instance.new("SpecialMesh") 
+blam.MeshType = "FileMesh" blam.Parent = bla blam.Scale = Vector3.new(5,5,5) blam.MeshId = BlastMesh.MeshId for i=1,30 do local pluscal = scale/38 e1m.Scale = e1m.Scale + Vector3.new(pluscal,pluscal,pluscal) 
+r1m.Scale = r1m.Scale + Vector3.new(pluscal,pluscal,pluscal) r2m.Scale = r1m.Scale + Vector3.new(pluscal,pluscal,pluscal)
+blam.Scale = blam.Scale + Vector3.new(pluscal,pluscal/2,pluscal) bla.CFrame = bla.CFrame * CFrame.Angles(0,math.rad(12),0) r1.CFrame = r1.CFrame * CFrame.Angles(math.rad(6),0,0) r2.CFrame = r2.CFrame * CFrame.Angles(0,math.rad(6),0) wait() end for i=1,30 do local pluscal = scale/38 e1m.Scale = e1m.Scale + Vector3.new(pluscal,pluscal,pluscal)  r1m.Scale = r1m.Scale + Vector3.new(pluscal,pluscal,pluscal) r2m.Scale = r1m.Scale + Vector3.new(pluscal,pluscal,pluscal)
+blam.Scale = blam.Scale + Vector3.new(pluscal/3,pluscal/3,pluscal/3) bla.CFrame = bla.CFrame * CFrame.Angles(0,math.rad(12),0) r1.CFrame = r1.CFrame * CFrame.Angles(math.rad(6),0,0) r2.CFrame = r2.CFrame * CFrame.Angles(0,math.rad(6),0) bla.Transparency = bla.Transparency + 0.1 e1.Transparency = e1.Transparency + 0.1 r1.Transparency = r1.Transparency + 0.1 r2.Transparency = r2.Transparency + 0.1 wait() end e1:Remove() r1:Remove() r2:Remove() end)) end
+function Hurtsplosion(pos,dmg,rndmg,siz,forc)
+coroutine.resume(coroutine.create(function() local boomcol = {"Bright red","New Yeller","Neon orange"}
+for i=1,3 do 
+coroutine.resume(coroutine.create(function()
+local plos = pa(m,"Block",1*s*siz,1.5*s*siz,0.7*s*siz,false,false,0.3,0,boomcol[i]) spm("Sphere",plos,1) plos.Anchored = true
+plos.CFrame = cf(pos + v3(0,0,0)) * ca(rd(ra(-360,360)),rd(ra(-360,360)),rd(ra(-360,360)))
+plos.Mesh.Scale = v3(0.1,0.1,0.1)
+for i=0.3,1,0.03 do local plc = plos.CFrame
+plos.Mesh.Scale = v3(i*6,i*6,i*6) plos.Transparency = i plos.CFrame = plc * ca(rd(3),rd(3),0)
+wait()
+end
+plos:Remove()
+end))
+end 
+end))
+wait(0.1)
+DmgHumanoidsNear(pos,dmg,rndmg,5.5*s*siz,forc)
+end
+function DmgHumanoidsNear(pos,dmg,rndmg,mag,forc) 
+local function kidive(ob) 
+for i,v in pairs(ob:children()) do 
+if v:IsA("BasePart") and v.Parent.Parent:findFirstChild("Humanoid") == nil and v.Parent:findFirstChild("Humanoid") == nil and (v.Position - pos).magnitude < mag*1.3 and v.Anchored == false  and v:GetMass() < 150 then 
+v:BreakJoints() v.Velocity = cf(pos,v.Position).lookVector*forc
+end
+if v:IsA("Humanoid") and v ~= hu and v.Parent:findFirstChild("Torso") then 
+if (pos - v.Parent.Torso.Position).magnitude < mag then local tdmg = dmg*ra(1,rndmg) 
+if v.Parent:findFirstChild("Hh") == nil then local hh= Instance.new("NumberValue",v.Parent) hh.Name = "Hh"
+hh.Value = v.Health - tdmg else v.Parent.Hh.Value = v.Health - (tdmg*3.5) end 
+v.Health = v.Parent.Hh.Value if v.Parent.Hh.Value < 1 then v.Parent:BreakJoints() end 
+end 
+end 
+if v:IsA("Model") or v:IsA("Workspace") then kidive(v) end end end 
+kidive(workspace) 
+end 
+function Fire(bullet,typez,siz,dmg,rndmg,forc)
+if typez == 1 then
+bullet.Anchored = true 
+local bullethit = false
+local tyms = 0
+repeat
+tyms = tyms + 2
+local bhit,bpos = ray(bullet.Position,bullet.Position - (bullet.CFrame *cf(0,0,-1)).p) 
+if bpos ~= nil and (bpos - bullet.Position).magnitude < 7  then bullethit = true else bullet.CFrame = bullet.CFrame *cf(0,0,-1*s) *ca(rd(-0.0025),rd(0),0) end 
+if tyms%32 == 0 then wait() end 
+until bullethit or bullet.Position.y < -300 or tyms > 800 
+bullet.CFrame = bullet.CFrame *cf(0,0,8) bullet:Remove()
+if bullet.Position.y < -300 then
 else
-for i=0,num do
-game:service'RunService'.RenderStepped:wait()
+Hurtsplosion(bullet.Position,dmg,rndmg,siz,forc)
 end
+elseif typez == 2 then
+bullet.Anchored = true 
+local bullethit = false
+local tyms = 0
+local ming = 0.001
+repeat 
+if tyms > 70 and (ming == 0.001 or ming == -2.5) then ming = -2.5
+local bpos = (bullet.CFrame *cf(0,0,-300)).p if (bpos - v3(Palm.Position.x,bpos.y,Palm.Position.z)).magnitude < 25*s then ming = 0 end 
 end
+tyms = tyms + 2
+local bhit,bpos = ray(bullet.Position,bullet.Position - (bullet.CFrame *cf(0,0,-1)).p) 
+if bpos ~= nil and (bpos - bullet.Position).magnitude < 7  then bullethit = true else bullet.CFrame = bullet.CFrame *cf(0,0,-0.5) *ca(rd(ming),rd(0),0) end
+if tyms%16 == 0 then wait() end 
+until bullethit or bullet.Position.y < -300 or tyms > 500 
+bullet.CFrame = bullet.CFrame *cf(0,0,8) bullet:Remove()
+if bullet.Position.y < -300 then
+else
+Hurtsplosion(bullet.Position,dmg,rndmg,siz,forc)
 end
-function weld(parent,part0,part1,c0)
-local weld=it("Weld") 
-weld.Parent=parent
-weld.Part0=part0 
-weld.Part1=part1 
-weld.C0=c0
-return weld
+elseif typez == 3 then 
 end
-local function rs()
-	game:GetService("RunService").RenderStepped:wait()
+end 
+function ShortifiedAnim(theanim)
+if theanim == "Beam" then
+local crom = pa(m,"Block",0,0,0,true,true,0.5,0,LaserCol3) local cromm = it("SpecialMesh",crom) cromm.MeshType = "FileMesh" cromm.MeshId = asset .. Decs.Crown
+cromm.Scale = v3(15*s,5*s,15*s) crom.Anchored = true 
+dias = {} loldiv = 360/8 for x=0,360,loldiv do 
+local dia = pa(m,"Block",0,0,0,false,false,0,0,LaserCol2) dia.Anchored = true local diam = it("SpecialMesh",dia) diam.MeshType = "FileMesh" diam.MeshId = DiamondMesh.MeshId
+diam.Scale = v3(3*s,9*s,3*s) table.insert(dias,dia)
+end Button = true coroutine.resume(coroutine.create(function() local tardz = 0 repeat wait() tardz = tardz+ 15
+crom.CFrame = Palm.CFrame *ca(rd(-90),0,0) *cf(0,5.5*s,2*s) *ca(0,rd(tardz),0) 
+for rofl=1,#dias do dias[rofl].CFrame = crom.CFrame *ca(0,rd(rofl*loldiv),0) *cf(0,-19*s,0) *ca(rd(25),0,0) *cf(0,32*s,0) end 
+ until not Button for x2=0.5,1,0.05 do wait() crom.Transparency = x2 end   end))
+coroutine.resume(coroutine.create(function() for xk=1,0.5,-0.02 do wait() for i=1,#dias do dias[i].Transparency =xk end end end))
+wait(1) local beamoffset = v3(0,0,0)
+local b1 = pa(m,"Ball",10*s,10*s,10*s,false,false,0.1,0,LaserCol) b1.Anchored = true 
+local b2 = pa(m,"Block",10*s,1,10*s,false,false,0.1,0,LaserCol) b2.Anchored = true  local b2m = it("CylinderMesh",b2)
+local b3 = pa(m,"Ball",10*s,10*s,10*s,false,false,0.1,0,LaserCol) b3.Anchored = true 
+local bpos = nil local bhit = nil local ts = 0
+ repeat beamoffset = v3(ra(-2*s,2*s),ra(-2*s,2*s),ra(-2*s,2*s)) ts = ts + 1
+bhit,bpos = ray(Palm.Position,Palm.Position - (Palm.CFrame *cf(0,0,1)).p) 
+if bhit == nil or (Palm.Position - bpos).magnitude > 1500 then break end 
+b1.CFrame = Palm.CFrame *cf(0,3*s,-11*s) 
+b3.CFrame = cf(bpos) local lenz = (b1.Position - b3.Position).magnitude 
+b2.CFrame = cf(b1.Position,b3.Position) *ca(rd(90),0,0) *cf(0,-lenz/2,0)  b2m.Scale = v3(1,lenz,1)
+b1.CFrame = b1.CFrame + beamoffset b2.CFrame = b2.CFrame + beamoffset b3.CFrame = b3.CFrame + beamoffset 
+if ts%10 == 0 then DmgHumanoidsNear(b3.Position,3,10,(14*s)+2,100) Explode(b3.CFrame*cf(0,b3.Size.y/3,0),25*s,LaserCol2) end
+wait()  until not Button or ts > 600
+  coroutine.resume(coroutine.create(function() for xk=0.1,1.1,0.08 do wait() b1.Transparency = xk  b2.Transparency = xk  b3.Transparency = xk  end b1:Remove() b2:Remove() b3:Remove() end))
+ coroutine.resume(coroutine.create(function() for xk=0.5,1.1,0.02 do wait() for i=1,#dias do dias[i].Transparency =xk end end end))
+wait(1)  clearit(dias) crom:Remove()
 end
-
-Plr = game.Players.LocalPlayer
-P = Plr.Character
-Mouse = Plr:GetMouse()
-
-ch = P
-RSH=ch.Torso["Right Shoulder"]
-LSH=ch.Torso["Left Shoulder"]
-RF, LF=Instance.new("Weld"), Instance.new("Weld") 
---
-RSH.Parent=nil
-LSH.Parent=nil
---
-RW.Name="Right Shoulder"
-RW.Part0=ch.Torso
-RW.C0=cf(1.5, 0.5, 0) --* CFrame.fromEulerAnglesXYZ(1.3, 0, -0.5)
-RW.C1=cf(0, 0.5, 0)
-RW.Part1=ch["Right Arm"]
-RW.Parent=P.Torso
---
-LW.Name="Left Shoulder"
-LW.Part0=ch.Torso
-LW.C0=cf(-1.5, 0.5, 0) --* CFrame.fromEulerAnglesXYZ(1.7, 0, 0.8)
-LW.C1=cf(0, 0.5, 0)
-LW.Part1=ch["Left Arm"]
-LW.Parent=P.Torso
---
-RF.Name="Right Hip"
-RF.Part0=ch.Torso
-RF.C0=cf(.5, -1.5, 0) --* CFrame.fromEulerAnglesXYZ(1.3, 0, -0.5)
-RF.C1=cf(0, 0.5, 0)
-RF.Part1=ch["Right Leg"]
-RF.Parent=P.Torso
---
-LF.Name="Left Hip"
-LF.Part0=ch.Torso
-LF.C0=cf(-.5, -1.5, 0) --* CFrame.fromEulerAnglesXYZ(1.7, 0, 0.8)
-LF.C1=cf(0, 0.5, 0)
-LF.Part1=ch["Left Leg"]
-LF.Parent=P.Torso
-RFC0 = RF.C0
-LFC0 = LF.C0
-RWC0 = CFrame.new(1.5, 0.5, 0, -0.945518613, -0.32556811, 0, 0.32556811, -0.945518613, 0, 0, 0, 1)
-LWC0 = CFrame.new(-1.05161786, 0.471444488, -0.853310168, 0.459834456, -0.887635231, -0.0256112181, 0.116241433, 0.08876127, -0.989246905, 0.880363643, 0.451912731, 0.143995479)
-TC0 = RootJoint.C0
-HC0 = Torso.Neck.C0
-
-local Rads = 14
-local sine = 0
-local Arms = true
-local Legs = true
-local AttArm = 0
-local AttLeg = 0
-local Enabled = true
-
-function Walk()
-    if Arms then
-        RW.C0=clerp(RW.C0,cf(1.5, 0.5, 0)*euler(-math.rad(50),0,math.rad(30)),.3)
-        RootJoint.C0=clerp(RootJoint.C0,RootCF*CFrame.Angles(math.rad(15),0,0),.3)
-		Handleweld.C1=clerp(Handleweld.C1,Handlecf*CFrame.Angles(0,math.rad(90),0),.3)
-        LW.C0=clerp(LW.C0,cf(-1.5+math.abs(math.sin(-sine)*.233), 0.5, math.sin(sine)*.233)*euler(-math.sin(sine)/1.5*(Humanoid.WalkSpeed/13),0,-math.sin(sine)/3*(Humanoid.WalkSpeed/13)),.3)
-    end
-    if Legs then
-        RF.C0=clerp(RF.C0,cf(.5, -1.5, math.sin(sine)*.233)*euler(-math.sin(sine)/2*((Humanoid.WalkSpeed+8)/24),0,0),.5)
-    	LF.C0=clerp(LF.C0,cf(-.5, -1.5, math.sin(-sine)*.233)*euler(-math.sin(-sine)/2*((Humanoid.WalkSpeed+8)/24),0,0),.5)
-    end
-	sine = sine + math.rad(Rads)
-    Torso.Neck.C0=clerp(Torso.Neck.C0,necko*euler(0,0,0),.3)
+end 
+PalmLev = it("BodyPosition",Palm) 
+PalmFace = it("BodyGyro",Palm) PalmFace.maxTorque = v3(0,0,0)
+coroutine.resume(coroutine.create(function()
+PalmLev.position = (t.CFrame *cf(handoffset)).p
+local yspi = 0
+while true do yspi = yspi + 8
+if Anim.a == "Gun" or Anim.a == "Ride" or Anim.a == "Pound" then 
+Facing = "Mouse" bgx = -90 bgy = 90 bgz = 0 
+elseif Anim.a == "Fu" or Anim.a == "Fist" or Anim.a == "GroundGrip" then 
+Facing = "Mouse" bgx = -90 bgy = 0 bgz = 0 
+elseif Anim.a == "Splat" or Anim.a == "Beam" then
+Facing = "Mouse" bgx = 0 bgy = 0 bgz = 0 
+elseif Anim.a == "None" then 
+Facing = "Owner" bgx = -90 bgy = 0 bgz = 0 Posing = "Follow"
+elseif Anim.a == "Shower" then
+Facing = "None" bgx = 0 bgy = 0 bgz = 0 Posing = "TopOwner"
+end 
+if Posing == "Follow" then 
+PalmLev.maxForce = v3(1/0,1/0,1/0) PalmLev.position = (t.CFrame *cf(handoffset) *cf(0,0,0)).p 
+elseif Posing == "TopOwner" then
+PalmLev.maxForce = v3(1/0,1/0,1/0) PalmLev.position = (t.CFrame *cf(0,12*s,0)).p 
+end 
+if Facing == "Owner" then 
+PalmFace.maxTorque = v3(1/0,1/0,1/0) PalmFace.cframe = cf(Palm.Position,he.Position) *ca(rd(bgx),rd(bgy),rd(bgz))
+elseif Facing == "Mouse" and mou ~= nil and Equip then 
+if Anim.a == "Gun" or Anim.a == "Beam" or Anim.a == "Ride" or Anim.a == "GroundGrip" or Anim.a == "Fu" or Anim.a == "Pound" or Anim.a == "Splat" or Anim.a == "Fist" then 
+if Anim.b == "None" or Anim.a == "Beam" or Anim.a == "Ride" then 
+PalmFace.cframe = cf(Palm.Position,mou.Hit.p) *ca(rd(bgx),rd(bgy),rd(bgz)) wait(0.05)
+end end end
+wait(0.05)
+end 
+end))
+function FireFinger(lasercol,ffingz,targ,typez,siz,dmg,rndmg,forc) coroutine.resume(coroutine.create(function() 
+local laser = pa(m,"Block",fingwide*1.3,fingwide*1.3,fingwide*2.5,true,false,0,0,lasercol) spm("Sphere",laser,1+(siz/5.5)) laser.Name = "Projectile"
+local lw = weld(laser,ffingz,laser,0,ffingz.Size.y/0.8 +(siz/2.5),0,rd(90),0,0)
+for i=1,0.4,-0.05 do laser.Transparency = i wait() end 
+BlastWave(ffingz.CFrame*cf(0,ffingz.Size.y*1.3,0)*ca(0,0,0),ffingz.Size.x*1.6,1.8,LaserCol2)
+lw:Remove() laser.CFrame = cf(laser.Position,targ)
+Fire(laser,typez,siz,dmg,rndmg,forc) 
+end))
 end
-function Aim()
-        RW.C0=clerp(RW.C0,CFrame.new(1.5, 0.5, 0, -0.945518613, -0.32556811, 0, 0.32556811, -0.945518613, 0, 0, 0, 1),.3)
-        LW.C0=clerp(LW.C0,CFrame.new(-1.05161786, 0.471444488, -0.853310168, 0.459834456, -0.887635231, -0.0256112181, 0.116241433, 0.08876127, -0.989246905, 0.880363643, 0.451912731, 0.143995479),.3)
-		RootJoint.C0=clerp(RootJoint.C0,TC0,.3)
-		Handleweld.C1=clerp(Handleweld.C1,Handlecf,.3)
-		Torso.Neck.C0=clerp(Torso.Neck.C0,HC0,.3)
-		if Vector3.new(P.Torso.Velocity.x, 0, P.Torso.Velocity.z).magnitude > 3 and Legs then
-			RF.C0=clerp(RF.C0,cf(.5, -1.5, math.sin(sine)*.233)*euler(-math.sin(sine)/2*((Humanoid.WalkSpeed+8)/24),0,0),.5)
-			LF.C0=clerp(LF.C0,cf(-.5, -1.5, math.sin(-sine)*.233)*euler(-math.sin(-sine)/2*((Humanoid.WalkSpeed+8)/24),0,0),.5)
-			sine = sine + math.rad(Rads)
-		end
+GrabWeld = it("Weld",m)
+Palm.Touched:connect(function(touch)
+if Anim.a == "Ride" and GrabWeld.Part1 == nil and touch.Parent:findFirstChild("Torso") and touch.Parent:findFirstChild("Humanoid") then
+local tor = touch.Parent.Torso touch.Parent.Humanoid.PlatformStand = true 
+GrabWeld.Part0 = Palm GrabWeld.Part1 = tor GrabWeld.C0 = cf(-3*s,4.5*s,-Palm.Size.x/2) GrabWeld.C1 = ca(0,rd(90),rd(-90)) *ca(0,rd(0),0)
 end
-function Idle()
-    if Arms then
-        RW.C0=clerp(RW.C0,cf(1.5, 0.5, 0)*CFrame.new(0, 0, 0, 0.862729907, -0.5, -0.0754789189, 0.49809736, 0.866025388, -0.0435777754, 0.0871555507, 0, 0.99619472),.3)
-        LW.C0=clerp(LW.C0,cf(-1.5, 0.5, 0)*CFrame.new(0, 0, 0, 0.173648223, 0.98480773, 0, -0.98480773, 0.173648223, 0, 0, 0, 1),.3)
-        RootJoint.C0=clerp(RootJoint.C0,RootCF*CFrame.Angles(0,0,-math.rad(70)),.3)
-	Handleweld.C1=clerp(Handleweld.C1,Handlecf,.3)
-	Torso.Neck.C0=clerp(Torso.Neck.C0,necko*euler(0,0,math.rad(70)),.3)
-    end
-    if Legs then
-        RF.C0=clerp(RF.C0,RFC0*cf(0,0,0)*CFrame.new(0, -0, 0, 0.99619472, 0, -0.0871557817, 0, 1, 0, 0.0871557817, 0, 0.99619472),.3)
-        LF.C0=clerp(LF.C0,LFC0*cf(0,0,0)*CFrame.new(0, -0, 0, 0.906307638, 0, 0.422618419, 0, 1, 0, -0.422618419, 0, 0.906307638),.3)
-    end
-end
-
-function Sound(ID,Par,Pitch,Vol)
-    local Sound = Instance.new("Sound",Par)
-    Sound.SoundId = "http://www.roblox.com/asset/?id="..tostring(ID)
-    game:GetService("ContentProvider"):Preload("http://www.roblox.com/asset/?id="..tostring(ID))
-    Sound.Pitch = Pitch
-    Sound.Volume = Vol
-    game.Debris:AddItem(Sound,Sound.TimeLength)
-    rs()
-    Sound:Play()
-end
-local aiming = false
-local Jumping = false
-local Jumpi = 0
-
-game:GetService("RunService").Heartbeat:connect(function()
-    if Jumping == true then
-        Jumpi = Jumpi + 1
-        if Arms then
-            RW.C0=clerp(RW.C0,cf(1, 1, 0)*euler(0,0,math.pi/2+math.pi/4),.5)
-            LW.C0=clerp(LW.C0,cf(-1, 1, 0)*euler(0,0,-math.pi/2-math.pi/4),.5)
-            RootJoint.C0=clerp(RootJoint.C0,RootCF*euler(math.pi/16,0,0),.5)
-        end
-        if Legs then
-            RF.C0=clerp(RF.C0,RFC0*cf(0,0,0)*euler(0,0,0),.5)
-            LF.C0=clerp(LF.C0,LFC0*cf(0,.5,-.6)*euler(0,0,0),.5)
-        end
-        Torso.Neck.C0=clerp(Torso.Neck.C0,necko*euler(0,0,0),.5)
-        if Jumpi == 10 then
-            Jumping = false
-            Jumpi = 0
-        end
-    elseif Vector3.new(P.Torso.Velocity.x, 0, P.Torso.Velocity.z).magnitude < 3 then
-		if aiming then
-			Aim()
-		else
-			Idle()
-		end
-    elseif Vector3.new(P.Torso.Velocity.x, 0, P.Torso.Velocity.z).magnitude > 3 then
-		if aiming then
-			Aim()
-		else
-			Walk()
-		end
-    end
 end)
-P.Humanoid.Jumping:connect(function()
-    if Arms == false and Legs == false then
-    else
-    Jumping = true
-    end
-end)
-function hwait()
-    game:GetService("RunService").Heartbeat:wait()
+re(bp,"Hand")
+hb = it("HopperBin",bp) hb.Name = "Hand"
+hb.Selected:connect(function(mouse) mou = mouse Equip = true
+mouse.KeyDown:connect(function(k)  k = k:lower()
+if Anim.a == "Ride" and k == "f" then FireFinger(LaserCol,pPinkie3,mouse.Hit.p,1,2.25,1,18,30)  end
+if Anim.b ~= "None" or Anim.Welding ~= 0 then  return end 
+if Anim.a == "None" then
+if k == "f" then 
+Anim.a = "Gun" HandSign("Gun",0.7)
+elseif k == "p" then
+Anim.a = "Fu" HandSign("f",1)
+elseif k == "g" then
+Anim.a = "Fist" HandSign("fist",1)
+elseif k == "c" then
+Anim.a = "Splat" HandSign("wide",1)
+elseif k == "r" then
+Anim.a = "Ride" HandSign("ride",1) Posing = "None"
+elseif k == "v" then
+Anim.a = "Shower" HandSign("grab2",1) PalmFace.cframe = cf(0,0,0) *ca(0,0,0)
+elseif k == "b" then
+Anim.a = "Pound" HandSign("fist",1)
+elseif k == "x" then
+Anim.a = "GroundGrip" HandSign("grab2",1)
+elseif k == "z" then
+Anim.a = "Beam" HandSign("wide2",1) 
+end 
+else
+if k == "f" and Anim.a == "Gun" then 
+Anim.a = "None" HandSign("five",0.8)
+elseif k == "p" and Anim.a == "Fu" then
+Anim.a = "None" HandSign("five",0.8)
+elseif k == "g" and Anim.a == "Fist" then
+Anim.a = "None" HandSign("five",0.8)
+elseif k == "c" and Anim.a == "Splat" then
+Anim.a = "None" HandSign("five",0.8)
+elseif k == "r" and Anim.a == "Ride" then
+Anim.a = "None" HandSign("five",0.8) GrabWeld.Part0 = nil Anim.b = "None" Posing = "Follow"  Facing = "Owner"
+if GrabWeld.Part1 ~= nil and GrabWeld.Part1.Parent:findFirstChild("Humanoid") ~= nil then GrabWeld.Part1.Parent.Humanoid.PlatformStand = false end GrabWeld.Part1 = nil
+elseif k == "v" and Anim.a == "Shower" then
+Anim.a = "None" HandSign("five",0.8) Posing = "Follow" Facing = "Owner"
+elseif k == "b" and Anim.a == "Pound" then
+Anim.a = "None" HandSign("five",0.8)
+elseif k == "x" and Anim.a == "GroundGrip" then 
+Anim.a = "None" HandSign("five",0.8)
+elseif k == "z" and Anim.a == "Beam" then 
+Anim.a = "None" HandSign("five",0.8)
 end
-function Sound(ID,Par,Pitch,Vol)
-    local Sound = Instance.new("Sound",Par)
-    Sound.SoundId = "http://www.roblox.com/asset/?id="..tostring(ID)
-    game:GetService("ContentProvider"):Preload("http://www.roblox.com/asset/?id="..tostring(ID))
-    Sound.Pitch = Pitch
-    Sound.Volume = Vol
-    game.Debris:AddItem(Sound,Sound.TimeLength)
-    rs()
-    Sound:Play()
 end
-function Damage(Dmg,Part)
-    local Child = Part
-    local Par = Part.Parent
-    if Par == workspace then
-    elseif Par~=nil then
-        repeat
-            Child = Par
-            Par = Par.Parent
-        until Par == workspace
-    end
-    local Found = false
-    function Search(c)
-        coroutine.resume(coroutine.create(function()
-            for i,v in pairs (c:GetChildren()) do
-                if v:IsA("Humanoid") then
-                    for i = 1,10 do
-                        v.Health = v.Health - Dmg/10
-                        Found = true
-                    end
-                end
-                Search(v)
-            end
-        end))
-    end
-    if Child ~= P then
-        Search(Child)
-    end
-    if Found == false then
-        return false
-    else 
-        return true
-    end
+end)
+mouse.Button1Down:connect(function()
+if Anim.a == "None" or Anim.b ~= "None" then return end 
+if Anim.a == "Gun" then
+Anim.b = "Gun" FireFinger(LaserCol,pPoint3,mouse.Hit.p,1,2.25,1,10,60) FireFinger(LaserCol,pMid3,mouse.Hit.p,1,2.25) wait(1) Anim.b = "None"
+elseif Anim.a == "Fu" then
+Anim.b = "Fu" FireFinger(LaserCol,pMid3,mouse.Hit.p,1,3.65,2,14,95) wait(0.25) Anim.b = "None"
+elseif Anim.a == "Fist" then 
+local bhit,bpos = ray(Palm.Position,Palm.Position - (Palm.CFrame *cf(0,-1,0)).p) 
+if bhit == nil or (Palm.Position - bpos).magnitude > 500 then return end 
+Anim.b = "Fist" Posing = "None" PalmFace.cframe = cf(Palm.Position,bpos) *ca(rd(-90),0,0)
+PalmLev.position = (Palm.CFrame *cf(0,-15*s,0)).p
+wait(0.45)
+PalmLev.position = bpos + ((Palm.CFrame *cf(0,1*s,0)).p - Palm.Position)
+local tz = 0 repeat wait()  BlastWave(Palm.CFrame*ca(rd(180),0,0),8*s,3.5,HCol) tz = tz + wait() until (PalmLev.position - Palm.Position).magnitude < 8*s or tz > 1
+Explode(Palm.CFrame *cf(0,6*s,0) *ca(rd(180),0,0),15*s,ts(bhit.BrickColor))
+DmgHumanoidsNear((Palm.CFrame *cf(0,8,0)).p,3,10,(12*s)+2,105)
+if not bhit.Anchored then PalmLev.position = (Palm.CFrame *cf(0,12*s,0)).p wait(0.5) end 
+wait(1) Posing = "Follow" Anim.b = "None"
+elseif Anim.a == "Splat" then
+if mouse.Target == nil and (Palm.Position - mouse.Hit.p).magnitude > 500 then return end local bpos = mouse.Hit.p
+Anim.b = "Splat" Posing = "None" 
+local ya,yb,yc = PalmFace.cframe:toEulerAnglesXYZ() PalmFace.cframe = cf(0,0,0) *ca(0,yb,0) *ca(rd(-90),0,0) PalmLev.position = bpos + v3(0,10*s,0)
+local tz = 0 repeat wait() tz = tz + wait() until (PalmLev.position - Palm.Position).magnitude < 5*s or tz > 1.3 
+for i=-90,0,5 do 
+PalmLev.position = PalmLev.position + v3(0,2*s,0) PalmFace.cframe = cf(0,0,0) *ca(0,yb,0) *ca(rd(i),0,0)
+wait()
+end  wait(0.2)
+for i=0,-100,-10 do 
+local lewd = i
+if lewd < -50 then lewd = -95 end 
+PalmLev.position = PalmLev.position - v3(0,4.7*s,0) PalmFace.cframe = cf(0,0,0) *ca(0,yb,0) *ca(rd(lewd),0,0)
+wait()
+end wait(0.2)
+local cr = pa(m,"Block",16*s,0,16*s,false,false,1,0,"") cr.Anchored = true cr.CFrame = cf(bpos) *ca(0,rd(ra(-360,360)),0)
+local de = it("Decal",cr) de.Face = "Top" de.Texture = asset .. Decs.Crack Serv.d:AddItem(cr,16)
+DmgHumanoidsNear((Palm.CFrame *cf(0,0,-1)).p,3,20,(15*s)+2,110)
+ShockWave(Palm.CFrame *ca(rd(90),0,0),25*s,LaserCol)
+wait(1) Posing = "Follow" Anim.b = "None"
+elseif Anim.a == "Ride" and Button == false then
+Posing = "None" Anim.b = "Ride"
+Button = true
+repeat PalmLev.position = (Palm.CFrame *cf(0,10,0)).p wait() until Button == false
+ Anim.b = "None"
+elseif Anim.a == "Shower" and Button == false then
+Anim.b = "Shower" Button = true 
+repeat
+local targz = Palm.Position + v3(0,20*s,0)
+if ra(1,12) == 1 then FireFinger(LaserCol,pPinkie3,targz,2,4,1,18,55) end
+if ra(1,13) == 1 then FireFinger(LaserCol,pRing3,targz,2,4,1,18,60) end
+if ra(1,12) == 1 then FireFinger(LaserCol,pMid3,targz,2,4,1,18,65) end
+if ra(1,13) == 1 then FireFinger(LaserCol,pPoint3,targz,2,4,1,18,70) end
+if ra(1,12) == 1 then FireFinger(LaserCol,pThumb3,targz,2,4,1,18,80) end
+PalmFace.cframe = PalmFace.cframe *ca(0,rd(10),0)
+wait()
+until Button == false
+Anim.b = "None" 
+elseif Anim.a == "Pound" and Anim.b == "None" then Posing = "None" Anim.b = "Pound"
+local bhit,bpos = ray(Palm.Position,Palm.Position - (Palm.CFrame *cf(0,-1,0)).p) 
+if bhit == nil or (Palm.Position - bpos).magnitude > 500 then return end 
+PalmLev.position = bpos + v3(0,15*s,0) 
+local ya,yb,yc = PalmFace.cframe:toEulerAnglesXYZ() PalmFace.cframe = ca(ya,yb,yc) 
+ local tz = 0 repeat wait() tz = tz + wait() until (PalmLev.position - Palm.Position).magnitude < 5*s or tz > 1.3  wait(0.1)
+for i=-90,-10,10 do
+PalmFace.cframe = ca(ya,yb,yc) *ca(0,0,rd(i+90)) PalmLev.position = PalmLev.position + v3(0,2.5*s,0)
+wait() end wait(0.25) local realcf = cf(v3(he.Position.x,0,he.Position.z),v3(Palm.Position.x,0,Palm.Position.z))
+for i=-10,-90,-10 do
+PalmFace.cframe =  ca(ya,yb,yc) *ca(0,0,rd(i+90)) PalmLev.position = PalmLev.position - v3(0,4*s,0)
+wait() end PalmFace.cframe = realcf *ca(rd(-90),rd(90),0) wait(0.25)
+local cr = pa(m,"Block",22*s,0,22*s,false,false,1,0,"") cr.Anchored = true cr.CFrame = cf(bpos) *ca(0,rd(ra(-360,360)),0)
+local de = it("Decal",cr) de.Face = "Top" de.Texture = asset .. Decs.Crack Serv.d:AddItem(cr,16)
+Dustplosion(Palm.CFrame *cf(2*s,0,0) *ca(rd(90),0,rd(90)),30*s,{"Dark green","Bright green","Brown"},3)
+ShockWave(Palm.CFrame *cf(2*s,0,0) *ca(rd(90),0,rd(90)),20*s,ts(bhit.BrickColor))
+DmgHumanoidsNear((Palm.CFrame *cf(0,1,0)).p,1,20,(15*s)+2,90) wait(0.2)
+local palmcf = cf(bpos) local earthsplos = ra(5,8) palmcf = Palm.CFrame *ca(0,rd(90),0) *ca(rd(-90),0,rd(0))
+for i=1,earthsplos do Earthsplosion(palmcf *cf(0,-2*s,((i*7)+7)*s),10,1,20,75) wait(0.1) end 
+Earthsplosion(palmcf *cf(0,-2*s,(((earthsplos+1)*7)+7)*s),16,2,25,75)
+      wait(1) Posing = "Follow" wait(0.25) Anim.b = "None" 
+elseif Anim.a == "GroundGrip" then Posing = "None" Anim.b = "GroundGrip"
+local bhit,bpos = ray(Palm.Position,Palm.Position - (Palm.CFrame *cf(0,-1,0)).p) 
+if bhit == nil or (Palm.Position - bpos).magnitude > 500 then return end 
+PalmLev.position = bpos + v3(0,27*s,0) ColFings(false)
+local tz = 0 repeat wait() tz = tz + wait() until (PalmLev.position - Palm.Position).magnitude < 8*s or tz > 1.3  wait(0.1)
+local thepos = (Palm.CFrame *cf(0,-0.1*s,0)).p - Palm.Position
+PalmFace.cframe = cf(Palm.Position,bpos + thepos) *ca(rd(-90),0,0)
+for i=27,1,-3 do PalmLev.position = bpos + v3(0,i*s,0) wait(0.07) end HandSign("grab3",0.4) wait(0.55)
+local ro = pa(m,"Ball",0,0,0,false,false,0,0,"Earth green") ro.Name = "Rock" local row = it("SpecialMesh",ro) row.MeshType = "FileMesh" row.MeshId = asset .. Decs.Rock
+local rowe = weld(ro,Palm,ro,0,Palm.Size.y,-Palm.Size.z*1.2,0,0,0) row.Scale = v3(9*s,10*s,9*s)
+coroutine.resume(coroutine.create(function() for xz=1,70,7 do PalmLev.position = bpos + v3(0,xz*s,0) wait(0.06) end end))
+wait(0.25) Dustplosion(cf(bpos),30*s,{"Dark green","Bright green","Brown"},3) local lolra = ra(-360,360)
+Earthsplosion(cf(bpos),25,1,20,125,"sand") for yyy=0,360,60 do  coroutine.resume(coroutine.create(function()
+for zzz=1,4 do 
+Earthsplosion(cf(bpos) *ca(0,rd(yyy+lolra),0) *cf(0,0,zzz*15*s),10,1,20,75) wait(0.14)
+end wait(0.25) Earthsplosion(cf(bpos) *ca(0,rd(yyy+lolra),0) *cf(0,0,5*18*s),25,1,20,120)  end)) end 
+wait(0.3) HandSign("grab2",0.5) wait(0.75) Serv.d:AddItem(ro,20) rowe:Remove() ro.CanCollide = true local rocf = ro.CFrame ro.Size=v3(14*s,14*s,14*s) ro.CFrame = rocf wait(0.75) ColFings(true) Posing = "Follow" Anim.b = "None" 
+elseif Anim.a == "Beam" and not Button and Anim.b == "None" then Anim.b = "Beam" 
+ShortifiedAnim("Beam") wait(0.5) Anim.b = "None"
 end
-neg={-1,1}
-Mouse.Button1Down:connect(function()
-    if Enabled == true then
-        Enabled = false
-        Arms = false
-        local Hit = false
-        AttArm = AttArm + 1
-        Handle.Touched:connect(function(part)
-            if Hit == false then
-                local Hitz = Damage(10,part)
-                if Hitz == true then
-                    Hit = true
-                end
-            end
-        end)
-        if AttArm % 2 == 0 then
-            for i = 0,1,0.05 do
-                rs()
-                RW.C0=clerp(RW.C0,CFrame.new(0.327810407, 0.426284045, -0.812734485, 0.499530673, 0.832429767, 0.23985371, -0.765840292, 0.553754687, -0.32687068, -0.404916912, -0.0204077363, 0.914125562),.3)
-LW.C0=clerp(LW.C0,cf(-1.5, 0.5, 0)*euler(0,0,-math.pi/16),.3)
-				LW.C0=clerp(LW.C0,CFrame.new(-1.12515569, 0.390085489, -0.0568969324, 0.966400146, 0.0897351503, -0.240870312, -0.223289788, 0.757267952, -0.613748312, 0.127328619, 0.646910369, 0.751860738),.3)
-                RF.C0=clerp(RF.C0,cf(.5, -1.5, 0)*euler(math.rad(30),0,0),.3)
-                LF.C0=clerp(LF.C0,cf(-.5, -1.5, 0)*euler(-math.rad(30),0,0),.3)
-                Torso.Neck.C0=clerp(Torso.Neck.C0,necko*euler(0,0,0),.3)
-					Handleweld.C1=clerp(Handleweld.C1,Handlecf*CFrame.new(0,0,1.5),.3)
-        RootJoint.C0=clerp(RootJoint.C0,RootCF*CFrame.Angles(math.rad(0),0,0),.3)
-
-            end
-        elseif AttArm % 2 == 1 then
-            LW.C0=clerp(LW.C0,cf(-1.5, 0.5, 0)*euler(math.pi/2,0,0),1)
-            for i = 0,1,0.05 do
-                rs()
-                RW.C0=clerp(RW.C0, CFrame.new(1.00035846, 0.481068671, 0, -0.838670492, -0.436109662, 0.326251596, 0.544639111, -0.671549916, 0.502383232, 0, 0.599023461, 0.80073148),.3)
-				LW.C0=clerp(LW.C0,CFrame.new(0.418275297, 0.689788699, -0.483788908, -0.600420177, -0.779812098, 0.177168876, 0.799684703, -0.585499287, 0.133022174, 0, 0.221548468, 0.975149393),.3)
-                RF.C0=clerp(RF.C0,cf(.5, -1.5, 0)*euler(-math.rad(30),0,0),.3)
-                LF.C0=clerp(LF.C0,cf(-.5, -1.5, 0)*euler(math.rad(30),0,0),.3)
-                Torso.Neck.C0=clerp(Torso.Neck.C0,necko*euler(0,0,0),.3)
-					Handleweld.C1=clerp(Handleweld.C1,Handlecf*CFrame.new(0,0,1.5),.3)
-        RootJoint.C0=clerp(RootJoint.C0,RootCF*CFrame.Angles(math.rad(0),0,0),.3)
-
-			end
-		end
-		Enabled=true
-		Arms=true
-    end
 end)
-
-Mouse.KeyDown:connect(function(key)
-	if key=="f" then
-		aiming=true
-		Arms=false
-		Sound(334702864,Character.Torso,1,1)
-	elseif key=="r" then
-		local hint = Instance.new("Part",workspace)
-		hint.Shape="Cylinder"
-		Sound(334702864,hint,1,1)
-		hint.Anchored=true
-		hint.CanCollide=false
-		hint.Material="Neon"
-		hint.Transparency=1
-		hint.BrickColor=BrickColor.new("Toothpaste")
-		hint.Size=Vector3.new(.2,4,4)
-		hint.CFrame=CFrame.new(Mouse.Hit.p)*CFrame.Angles(0,0,math.rad(90))
-		for i = 1,30 do
-			rs()
-			hint.Transparency=1-i/30
-		end
-		local spear = Handle:Clone()
-		spear.Anchored=true
-		Connector:Clone().Parent=spear
-		Up:Clone().Parent=spear
-		Down:Clone().Parent=spear
-		Grip:Clone().Parent=spear
-		for i,v in pairs(spear:children'') do if v:IsA("BasePart") then v.Anchored=true else v:Remove() end end
-		local parts = {spear.Connector,spear.Up,spear.Down,spear.Grip}
-		local cframes = {CFrame.new(0.0500068665, -1.55001354, 6.91413879e-006, 1, 0, 0, 0, 1, 0, 0, 0, 1),CFrame.new(-0.0500155687, -1.95002747, 0.200003147, -1, 0, 0, 0, 1, 0, -0, 0, -1),CFrame.new(0.0500155687, -1.95003223, 0.19999814, 1, 0, 0, 0, 1, 0, 0, 0, 1),CFrame.new(0.0500068665, 0.449998379, 5.96046448e-006, 1, 0, 0, 0, 1, 0, 0, 0, 1)}
-		spear.CFrame=CFrame.new((hint.CFrame*CFrame.new(-5,0,0)).p)
-		spear.Parent=workspace
-		spear.Touched:connect(function(v)
-			if v.Parent~=nil then
-				if v.Parent:FindFirstChild("Humanoid") and v.Parent~=Character then
-					v.Parent.Humanoid.Health=v.Parent.Humanoid.Health-10
-				end
-			end
-		end)
-		for _,v in pairs(parts) do
-			v.CFrame=spear.CFrame*cframes[_]:inverse()
-		end
-		for i = 1,10 do
-			rs()
-			spear.CFrame=spear.CFrame*CFrame.new(0,0.7,0)
-			for _,v in pairs(parts) do
-				v.CFrame=spear.CFrame*cframes[_]:inverse()
-			end
-		end
-		spawn(function()
-			wait(.5)
-			spear:Destroy()
-			Handleweld = Instance.new("ManualWeld")
-			Handleweld.Part0 = game.Players.LocalPlayer.Character["Right Arm"]
-			Handleweld.Part1 = Character.Handle  Handleweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-			Handleweld.C1 = CFrame.new(-0.0500130653, -0.15998745, 0.999988556, 1, 0, 0, 0, 0, -1, 0, 0.999999881, 0)
-			Handleweld.Parent = game.Players.LocalPlayer.Character["Right Arm"]
-			hint:Remove()
-		end)
-	end
+mouse.Button1Up:connect(function()
+Button = false
 end)
-
-local enabled=true
-Mouse.KeyUp:connect(function(key)
-	if key=="f" and enabled then
-		aiming=false
-		enabled=false
-		Handleweld:Destroy()
-		local temp = Handle
-		temp.CanCollide=true
-		local parts = {Connector,Up,Down,Grip}
-		local cframes = {Connectorweld.C1,Upweld.C1,Downweld.C1,Gripweld.C1}
-		local init = Mouse.Hit.p
-		local dir = init - temp.Position 
-		for i,v in pairs(parts) do v.Anchored=true end Handle.Anchored=true
-		spawn(function()
-		for i = 1,200 do
-			rs()
-			for _,v in pairs(temp:GetTouchingParts()) do
-				if v.Parent~=nil then
-					if v.Parent:FindFirstChild("Humanoid") and v.Parent~=Character then
-						v.Parent.Humanoid.Health=v.Parent.Humanoid.Health-5
-					end
-				end
-			end
-			local Distance = (init-temp.Position).magnitude
-			if Distance > 2 then Distance = 2 end
-			temp.CFrame = CFrame.new(temp.Position,init) * CFrame.new(0,0,-Distance) * CFrame.Angles(math.rad(-90),math.rad(90),0)
-			for _,v in pairs(parts) do
-				v.CFrame=temp.CFrame*cframes[_]:inverse()
-			end
-		end	
-		temp:Remove()
-		for i,v in pairs(parts) do v:Remove() end
-		end)
-		for i = 1,10 do
-			rs()
-			RW.C0=clerp(RWC0,CFrame.new(1.5, 0.5, 0, -0.969445348, 0.175265431, 0.171632558, 0.245307371, 0.692642331, 0.678285301, 0, 0.699663281, -0.714472771),i/10)
-			LW.C0=clerp(LWC0,CFrame.new(-1.5, 0.5, 0, 0.880477369, 0.474088192, 0, -0.0928957462, 0.172526136, -0.980614662, -0.464897841, 0.863409042, 0.195946127),i/10)
-		end
-		enabled=true
-				Arms=true
-		Handle  = Instance.new("Part", game.Players.LocalPlayer.Character)
-			Handle:BreakJoints()
-			Handle.TopSurface = "Smooth"
-			Handle.Material = "SmoothPlastic"
-			Handle.Name = 'Handle'
-			Handle.Transparency=1
-			Handle.BottomSurface = "Smooth"
-			Handle.FormFactor = "Custom" Handle.CanCollide = false
-			Handle.BrickColor = BrickColor.new("Medium stone grey")
-			Handle.Size = Vector3.new(0.5, 4.9000001, 0.799999833)
-Handleweld = Instance.new("ManualWeld")
-Handleweld.Part0 = game.Players.LocalPlayer.Character["Right Arm"]
-Handleweld.Part1 = Handle  Handleweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-Handleweld.C1 = CFrame.new(-0.0500130653, -0.15998745, 0.999988556, 1, 0, 0, 0, 0, -1, 0, 0.999999881, 0)
-Handleweld.Parent = game.Players.LocalPlayer.Character["Right Arm"]
-staffweld=Handleweld
-Handlecf=Handleweld.C1
-Grip  = Instance.new("Part", game.Players.LocalPlayer.Character)
-			Grip:BreakJoints()
-			Grip.TopSurface = "Smooth"
-			Grip.Material = "SmoothPlastic"
-			Grip.Name = 'Grip'
-			Grip.BottomSurface = "Smooth"
-			Grip.FormFactor = "Custom" Grip.CanCollide = false
-			Grip.BrickColor = BrickColor.new("Toothpaste")
-			Grip.Size = Vector3.new(0.400000006, 4, 0.400000006)
-			    Gripweld = Instance.new("ManualWeld")
-   Gripweld.Part0 =  Handle   Gripweld.Part1 = Grip  Gripweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-   Gripweld.C1 = CFrame.new(0.0500068665, 0.449998379, 5.96046448e-006, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-    Gripweld.Parent = Grip		
-					GripMesh = Instance.new("CylinderMesh",Grip)
-				GripMesh.Name = "Mesh"
-				GripMesh.Offset = Vector3.new(0, 0, 0)
-				GripMesh.Scale = Vector3.new(1, 1, 1)
-				
-Down  = Instance.new("WedgePart", game.Players.LocalPlayer.Character)
-			Down:BreakJoints()
-			Down.TopSurface = "Smooth"
-			Down.Material = "SmoothPlastic"
-			Down.Name = 'Down'
-			Down.BottomSurface = "Smooth"
-			Down.FormFactor = "Custom" Down.CanCollide = false
-			Down.BrickColor = BrickColor.new("Toothpaste")
-			Down.Size = Vector3.new(0.200000003, 1, 0.400000006)
-Downweld = Instance.new("ManualWeld")
-   Downweld.Part0 =  Handle   Downweld.Part1 = Down  Downweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-   Downweld.C1 = CFrame.new(0.0500155687, -1.95003223, 0.19999814, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-    Downweld.Parent = Down		
-Connector  = Instance.new("Part", game.Players.LocalPlayer.Character)
-			Connector:BreakJoints()
-			Connector.TopSurface = "Smooth"
-			Connector.Material = "SmoothPlastic"
-			Connector.Name = 'Connector'
-			Connector.Shape="Ball"
-			Connector.BottomSurface = "Smooth"
-			Connector.FormFactor = "Custom" Connector.CanCollide = false
-			Connector.BrickColor = BrickColor.new("Toothpaste")
-			Connector.Size = Vector3.new(0.400000006, 0.400000006, 0.400000006)
-			Connectorweld = Instance.new("ManualWeld")
-   Connectorweld.Part0 =  Handle   Connectorweld.Part1 = Connector  Connectorweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-   Connectorweld.C1 = CFrame.new(0.0500068665, -1.55001354, 6.91413879e-006, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-    Connectorweld.Parent = Connector		
-Up  = Instance.new("WedgePart", game.Players.LocalPlayer.Character)
-			Up:BreakJoints()
-			Up.TopSurface = "Smooth"
-			Up.Material = "SmoothPlastic"
-			Up.Name = 'Up'
-			Up.BottomSurface = "Smooth"
-			Up.FormFactor = "Custom" Up.CanCollide = false
-			Up.BrickColor = BrickColor.new("Toothpaste")
-			Up.Size = Vector3.new(0.200000003, 1, 0.400000006)
-			    Upweld = Instance.new("ManualWeld")
-   Upweld.Part0 =  Handle   Upweld.Part1 = Up  Upweld.C0 = CFrame.new(0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-   Upweld.C1 = CFrame.new(-0.0500155687, -1.95002747, 0.200003147, -1, 0, 0, 0, 1, 0, -0, 0, -1)
-    Upweld.Parent = Up		
-Connector.Material="Neon"
-Grip.Material="Neon"
-Up.Material="Neon"
-Down.Material="Neon"
-	end
+mouse.Move:connect(function() 
 end)
+end)
+hb.Deselected:connect(function(mouse)
+Equip = false
+end)
+game.Workspace.YOURNAMEHERE.Humanoid.MaxHealth = math.huge --Put your name where it says YOURNAMEHERE.
+
+
